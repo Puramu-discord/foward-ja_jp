@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Redirect en-us to ja-jp",
+  "version": "1.0.0",
+  "description": "URLに含まれる en-us を ja-jp に自動で置換してリダイレクトします。",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "redirect_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
